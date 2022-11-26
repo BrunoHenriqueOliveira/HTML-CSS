@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de formluario</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">nome</label>
+                <input type="text" name="nome" id="iname" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>sexo </legend>
+            <input type="radio" name="sexo" id="idexo">
+            <label for="isxmas">masculino</label>
+            <input type="radio" name="sexo" id="idsexo">
+            <label for="isxemfem">feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>E-sport favorito</legend>
+            <input type="checkbox" name="esval" id="iesval"><label for="iesval">Valorant</label>
+            <input type="checkbox" name="escs" id="iescs"><label for="iscs">Counter-Strike GO</label>
+            <input type="checkbox" name="eslol" id="ieslol"><label for="ieslol">League of Legends</label>
+            <input type="checkbox" name="esow" id="iesow"><label for="iesow">OverWatch 2</label>
+            <input type="checkbox" name="escod" id="iescod"><label for="iescod">COD Warzone</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
